@@ -1,0 +1,155 @@
+/* RESET CSS */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    /* RETIRE LA DECORATION ET LA COULEUR DU "a" */
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    /* RETIRE LE SOULIGNEMENT DES "ul"  */
+    list-style: none;
+}
+
+img {
+    /* L'IMAGE NE PEUT PAS DEPASSER LE PARENT */
+    display: block;
+    max-width: 100%;
+}
+
+/* FIN RESET CSS */
+
+
+
+/* BARRE DE NAVIGATION */
+
+body {
+    /* CHANGEMENT DE LA POLICE DU SITE */
+    font-family: 'Open Sans'sans-serif;
+}
+
+main {
+    /* CENTRE LE SITE AVEC LA MEME LARGEUR DES DEUX COTES */
+    margin: 50px 15%;
+}
+
+nav {
+    /* METTRE LES ELEMENTS COTE A COTE */
+    display: flex;
+    align-items: center;
+    /* CENTRER LES ELEMENTS */
+    justify-content: space-between;
+    /* ESPACER LES ELEMENTS */
+    margin-bottom: 50px;
+    /* ESPACER POUR QUE SA NE TOUCHE PAS LA BARRE DE NAVIGATION */
+}
+
+ul {
+    /* MET LES LIENS COTE A COTE */
+    display: flex;
+}
+
+h1 {
+    /* CHANGER TAILLE TITRE <h1> */
+    font-size: 35px;
+    /* TAILLE DE LA POLICE */
+    text-transform: uppercase;
+    /* MET LE TITRE EN MAJUSCULE */
+}
+
+li {
+    /* CHANGER LES <li> */
+    text-transform: uppercase;
+    /* METTRE LES <li> EN MAJUSCULE */
+    margin-left: 20px;
+    /* METTRE DES MARGES ENTRE LES <li> A GAUCHE */
+    font-weight: 700;
+    /* METTRE LES <li> EN GRAS */
+}
+
+
+/* FIN DE LA BARRE DE NAVIGATION */
+
+h2 {
+    /* CHANGER TAILLE <h2> */
+    font-size: 40px;
+    /* TAILLE <h2> */
+    text-align: center;
+    /* CENTRER LE <h2 */
+    margin-bottom: 30px;
+    /* ESPACE ENTRE LE <h2> et L'IMAGE */
+}
+
+.main-img {
+    /* CHANGER LA TAILLE DE LA PHOTO DE LA CLASS "main-img" */
+    width: 100%;
+    /* IMAGE QUI FAIT 100% DE LA TAILLE */
+    height: 400px;
+    /* DEFINIT LA HAUTEUR DE L'IMAGE */
+    border-radius: 10px;
+    /* ARRONDIR LES BORDS DE L'IMAGE */
+    object-fit: cover;
+    /* GARDE LA RESOLUTION DE L'IMAGE */
+}
+
+section {
+    margin: 30px 0;
+    /* METTRE UNE MARGE EN HAUT ET EN BAS DE LA <section> */
+    display: flex;
+    /* ALIGNE LES ELEMENTS DE LA <section> DE GAUCHE A DROITE*/
+    align-items: center;
+    /* ALIGNE SUR L'AXE VERTICAL */
+}
+
+section h3:first-child {
+    /* MODIFIER LE PREMIER ENFANT <h3> DE LA <section> */
+    font-size: 35px;
+    /* TAILLE DU PREMIER <h3> */
+    border: 3px solid grey;
+    /* BORDURE DU PREMIER <h3> */
+    padding: 10px;
+    /* BORDURE COLLE AU TEXTE */
+}
+
+section h3:nth-child(2) {
+    /* MODIFIER LE DEUXIEME ENFANT <h3> DE LA <section> */
+    font-size: 30px;
+    margin: 0 20px
+        /* MARGE DU DEUXIEME ENFANT <h3 */
+}
+
+p {
+    /* CHANGER LA MARGE DU <p> */
+    margin-bottom: 30px;
+    /* METTRE UNE MARGE EN BAS DU <p> */
+}
+
+.img-bottom {
+    /* ALIGNER LES IMAGES DE LA class="img-bottom" */
+    display: flex;
+    justify-content: space-between;
+}
+
+.img-bottom img:first-child {
+    /* MODIFIER LE PREMIER ENFANT IMAGE DE LA class="img-bottom" */
+    width: 58%;
+}
+
+.img-bottom img:nth-child(2) {
+    /* MODIFIER LE SECOND ENFANT IMAGE DE LA class="img-bottom" */
+    width: 38%;
+}
+
+.img-bottom img {
+    /* MODIFIER LES IMAGES DE LA classe="img-bottom" */
+
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+}
